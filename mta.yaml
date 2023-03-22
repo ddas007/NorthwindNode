@@ -1,0 +1,44 @@
+ID: Northwind
+_schema-version: '3.1'
+version: 0.0.1
+parameters:
+  enable-parallel-deployments: true
+
+modules:
+  - name: Northwind-service
+    type: nodejs
+    path: srv
+    build-parameters:
+      ignore:
+        - 'default-*.json'
+        - .env
+        - '*node_modules*'
+        - package-lock.json
+    provides:
+      - name: srv-api
+        properties:
+          srv-url: ${default-url}
+    requires:
+      - name: Northwind-destination-service
+
+############ RESOURCES #############      
+resources:
+####      DESTINATION SERVICE ####
+  - name: Northwind-destination-service
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: destination
+      service-name: Northwind-destination
+      service-plan: lite
+      config:
+        HTML5Runtime_enabled: true
+        init_data:
+          instance:
+            existing_destinations_policy: update
+            destinations:
+              - Name: NorthWind
+                URL: "https://services.odata.org/V3/Northwind/Northwind.svc/"
+                Authentication: NoAuthentication
+                ProxyType: Internet
+                Type: HTTP            
+                HTML5.DynamicDestination: true

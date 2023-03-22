@@ -1,0 +1,8 @@
+{
+    "authenticationMethod": "none",
+    "routes": [{
+        "source": "^/(.*)$",
+        "target": "$1",
+        "destination": "srv-api"
+    }]
+}

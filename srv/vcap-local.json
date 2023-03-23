@@ -15,8 +15,8 @@
         ],
         "plan": "lite",
         "credentials": {
-          "clientid": "sb-clone646f45c91de542868cdc0a5fbb3c8ee9!b124650|destination-xsappname!b62",
-          "clientsecret": "ebddbfa3-051c-4cb2-914d-c8e96bde393a$E1P9i45ptqN8Kd9I6dmxmr3Ige8FzmmPU_chzvda9SA=",
+          "clientid": "",
+          "clientsecret": "",
           "credential-type": "binding-secret",
           "identityzone": "a49a471btrial",
           "instanceid": "646f45c9-1de5-4286-8cdc-0a5fbb3c8ee9",
@@ -26,7 +26,7 @@
           "uaadomain": "authentication.us10.hana.ondemand.com",
           "uri": "https://destination-configuration.cfapps.us10.hana.ondemand.com",
           "url": "https://a49a471btrial.authentication.us10.hana.ondemand.com",
-          "verificationkey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA60zjnX8rRvQ+A9ZSEWYJ\nmIBh66THSFXwaCpfzJc2pkEAWPYoaQGsjuJkJjLz1gsMml20SjyTn6KlIGvfc+Ul\nKTx2EicY1aAcvSixaiRYGjzBXt3CEafrA5f6CgEDD62qa57cXhlEWVQJEvmXiZgN\nHHqqNIE65Tm8sAsSXA2n3AgF49k6NP/BG4yX7N0KPwnkasM4RKU3k3S0ugePI0dC\n9B8Xdsb9eFnUt1kwy6dOHyBwlchPr0JUNFDlm0vnWJjho6ltHy19hmih9LgtUNvU\nY1PeyrZ/PP7zN4lS+39SRx2F15DGqnE6hxmG1F/ulL/QgRErsUwm4dDSFdA+F6JE\nIwIDAQAB\n-----END PUBLIC KEY-----",
+          "verificationkey": "",
           "xsappname": "clone646f45c91de542868cdc0a5fbb3c8ee9!b124650|destination-xsappname!b62"
         }
       }
